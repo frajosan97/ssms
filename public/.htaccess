@@ -1,0 +1,17 @@
+Options -Indexes
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    #accept loading of actual files and directories
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    #send everything else to the index page
+    RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+
+    Header set Access-Control-Allow-Origin "*"
+    # php -- BEGIN cPanel-generated handler, do not edit
+    # Set the “ea-php81” package as the default “PHP” programming language.
+    AddHandler application/x-httpd-ea-php81 .php .php8 .phtml
+    # php -- END cPanel-generated handler, do not edit
+</IfModule>

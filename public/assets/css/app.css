@@ -1,0 +1,511 @@
+/* Main styling page */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.maincolor {
+  color: var(--primary) !important;
+}
+
+.pg-theme {
+  background: var(--primary) !important;
+  color: #fefefe;
+}
+
+.theme2,
+.preloader {
+  background-color: var(--secondary) !important;
+  color: #fefefec4;
+}
+
+.overlayContainer {
+  position: relative;
+}
+
+label {
+  text-transform: capitalize;
+}
+
+.loadContainer {
+  height: 100%;
+  border-radius: 6px;
+  background-color: var(--secondary);
+  color: white;
+  transition: 0.5s ease;
+  position: absolute;
+  text-align: center;
+  z-index: 1000;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.cursor-pointer {
+  color: var(--primary) !important;
+}
+
+.cursor-pointer:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.cursor-pointer2 {
+  color: var(--primary) !important;
+}
+
+.cursor-pointer2:hover,
+select,
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.carousel-caption {
+  right: unset !important;
+  left: unset !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: inherit !important;
+  height: unset !important;
+  display: flex !important;
+  align-items: center !important;
+  background-color: rgba(0, 0, 0, 0.582);
+}
+
+#carouselExampleIndicators:hover .carousel-control-prev,
+#carouselExampleIndicators:hover .carousel-control-next {
+  display: block !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 100%;
+}
+
+.carousel-indicators .active {
+  background-color: var(--primary) !important;
+}
+
+.effect-on-hover {
+  transition: 0.5s ease-out;
+}
+
+.effect-on-hover:hover {
+  background: var(--primary) !important;
+  transform: translateY(-5px);
+  transition: 0.5s ease-out;
+  cursor: pointer;
+}
+
+.effect-on-hover:hover i {
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.clickable-tr:hover,
+.clickable-tr:hover td,
+.clickable-tr:hover a,
+.effect-on-hover:hover,
+.effect-on-hover:hover table,
+.effect-on-hover:hover small,
+.effect-on-hover:hover h3,
+.effect-on-hover:hover strong {
+  color: #fefefee5 !important;
+}
+
+.clickable-tr a {
+  display: block;
+}
+
+.clickable-tr a:hover {
+  text-decoration: underline;
+}
+
+hr.dividerDiv1 {
+  background-color: none;
+  border: none;
+  border-bottom: 2px dotted var(--primary) !important;
+  margin-top: 0;
+}
+
+hr.dividerDiv2 {
+  background-color: none;
+  border: none;
+  border-bottom: 2px dotted #fefefeea !important;
+  margin-top: 0;
+}
+
+hr.dividerDiv3 {
+  width: 20%;
+  background-color: none;
+  border: none;
+  border-bottom: 2px dotted var(--primary) !important;
+  margin-top: 0;
+}
+
+hr.dividerDiv4 {
+  width: 20%;
+  background-color: none;
+  border: none;
+  border-bottom: 2px dotted #fefefeea !important;
+  margin-top: 0;
+}
+
+blockquote {
+  border-color: var(--primary);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+blockquote:hover {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+
+blockquote:hover a,
+blockquote:hover h1,
+blockquote:hover h2,
+blockquote:hover h3,
+blockquote:hover h4,
+blockquote:hover h5,
+blockquote:hover h6 {
+  color: white !important;
+}
+
+.border-custom {
+  border: 1px solid var(--primary) !important;
+}
+
+.border-top-custom {
+  border-top: 1px solid var(--secondary) !important;
+}
+
+.border-dotted {
+  border: 1px dotted var(--primary) !important;
+}
+
+.framecustom {
+  width: 100% !important;
+  height: 70vh !important;
+  border: 1px solid var(--primary) !important;
+}
+
+.form-control {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid var(--primary);
+}
+
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid var(--primary);
+}
+
+.btn-custom,
+.buttons-html5,
+.swal2-styled {
+  background: var(--secondary);
+  color: #fefefe !important;
+}
+
+.btn-custom:hover,
+.buttons-html5:hover,
+.swal2-styled:hover {
+  opacity: 0.8;
+  background: var(--secondary);
+  color: #fefefe !important;
+}
+
+.btn-outline-custom {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline-custom:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.clickable-tr:hover {
+  background-color: var(--secondary) !important;
+  color: white !important;
+  cursor: pointer;
+}
+
+.flag-make .stripes {
+  padding: 1px;
+}
+
+.top-contacts .contacts-listing li {
+  border-right: 1px dotted #fefefed7 !important;
+}
+
+.top-contacts .contacts-listing li:last-of-type {
+  border-right: none !important;
+  padding-right: 0 !important;
+}
+
+.top-contacts .contacts-listing li:first-of-type {
+  padding-left: 0 !important;
+}
+
+.top-contacts .contacts-listing li a {
+  display: block;
+  color: #fefefe;
+}
+
+.googlemap iframe {
+  width: 100%;
+  min-height: 400px;
+  border: 1px dotted var(--primary);
+  background-color: #fefefe;
+}
+
+.social-links-footer a,
+.social-links-footer i,
+.social-links-footer h5,
+.footer-links p,
+.footer-links a,
+.footer-links h6 {
+  color: #fefefec4 !important;
+}
+
+.footer-links a {
+  display: block;
+}
+
+.b-m {
+  border-bottom: 5px solid white !important;
+}
+
+.r-m {
+  border-right: 5px solid white !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block !important;
+}
+
+.h-show button {
+  transition: 0.5s ease-out;
+}
+
+.h-show:hover button {
+  display: inline !important;
+  transition: 0.5s ease-out;
+}
+
+/* Mobile Phones */
+.m-top {
+  border-radius: 0 0 20% 20% !important;
+}
+
+/* Portals */
+.main-header {
+  height: 60px !important;
+}
+
+.sidebar {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.sidebar ul li a {
+  width: 100% !important;
+  margin: 0 !important;
+  color: #fefefe !important;
+}
+
+.sidebar .nav-link {
+  cursor: pointer;
+  color: #fefefe !important;
+}
+
+.nav-section a {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.nav-section .dropdown-menu a {
+  color: #000 !important;
+  font-weight: unset !important;
+}
+
+.treeviewcustom {
+  background: #000 !important;
+}
+
+.sidebar .nav-item a,
+.sidebar .nav-item a:hover {
+  border-radius: 0 0 0 0 !important;
+  cursor: pointer;
+}
+
+.activelink {
+  background: #000;
+  border-radius: 0 !important;
+}
+
+.treeviewcustom {
+  background: #000 !important;
+}
+
+.wish-img {
+  border-radius: 50% 3px 3px 50%;
+}
+
+.amen {
+  width: 50%;
+  text-align: center;
+  border-bottom: 1px dotted white;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.amen span {
+  background: var(--primary);
+  padding: 0 10px;
+}
+
+.cookie {
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  z-index: 1500;
+}
+
+.hide {
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.6s ease opacity, 0.6s ease transform;
+}
+
+.navigation-list-item .fa-angle-right {
+  transition: 0.5s ease-out;
+}
+
+.navigation-list-item:hover .fa-angle-right {
+  transform: rotate(90deg);
+}
+
+.htmpdfview {
+  max-height: 70vh;
+  overflow-y: auto;
+  border: 1px solid var(--primary);
+  background-color: #424242;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.error-alert {
+  background-color: red;
+  color: #fefefe;
+}
+
+.alertbox {
+  padding: 2px;
+  margin-bottom: 4px;
+  border-radius: 6px;
+}
+
+.success-alert {
+  background-color: rgb(40, 189, 35);
+  color: #fefefe;
+}
+
+.error-alert {
+  background-color: red;
+  color: #fefefe;
+}
+
+.slt {
+  display: flex;
+  flex-direction: row;
+}
+
+.slt:before,
+.slt:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px dashed var(--primary);
+  margin: auto;
+}
+
+.slt:before {
+  margin-right: 10px;
+}
+
+.slt:after {
+  margin-left: 10px;
+}
+
+@media print {
+  .pagebreak {
+    page-break-before: always;
+  }
+
+  /* page-break-after works, as well */
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1500;
+  top: 0;
+  left: 0;
+  background-color: var(--primary);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
