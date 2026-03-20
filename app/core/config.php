@@ -1,33 +1,28 @@
 <?php
 
 if ($_SERVER['SERVER_NAME'] == 'localhost') {
-    define('DBNAME', 'sch'); // localhost host database name
-    define('DBHOST', 'localhost'); // localhost host host name
-    define('DBUSER', 'root'); // localhost host user name
-    define('DBPASS', ''); // localhost host password name
+    define('DBNAME', 'ssms');
+    define('DBHOST', 'localhost');
+    define('DBUSER', 'root');
+    define('DBPASS', '');
     define('DBDRIVER', '');
-    define('SCH_DOMAIN', 'edupulse.co.ke');
-    define("SCH_CHECK_DOMAIN", 'edupulse.co.ke');
+    define('SCH_DOMAIN', 'kathekaboys.sc.ke');
+    define("SCH_CHECK_DOMAIN", 'kathekaboys.sc.ke');
     define("DEBUG", true);
 } else {
-    define('DBNAME', 'frajosan_SSMS'); // real server host database name
-    define('DBHOST', 'localhost'); // real server host host name
-    define('DBUSER', 'frajosan_francis'); // real server host user name
-    define('DBPASS', 'Frajosan97@001'); // real server host password name
+    define('DBNAME', 'hencangr_ssms');
+    define('DBHOST', 'localhost');
+    define('DBUSER', 'hencangr_francis');
+    define('DBPASS', 'Frajosan97@001');
     define('DBDRIVER', '');
-    if (in_array("frajosantech", explode(".", $_SERVER['SERVER_NAME']))) {
-        define('SCH_DOMAIN', 'edupulse.co.ke');
-        define("SCH_CHECK_DOMAIN", 'edupulse.co.ke');
-    } else {
-        define('SCH_DOMAIN', $_SERVER['SERVER_NAME']);
-        define("SCH_CHECK_DOMAIN", $_SERVER['SERVER_NAME']);
-    }
+    define('SCH_DOMAIN', $_SERVER['SERVER_NAME']);
+    define("SCH_CHECK_DOMAIN", $_SERVER['SERVER_NAME']);
     define("DEBUG", false);
 }
 
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
-$THIS_FILE = str_replace('\\', '/', __File__);
+$THIS_FILE = str_replace('\\', '/', __FILE__);
 $DOC_ROOT = $_SERVER['DOCUMENT_ROOT'];
-$ROOT =  str_replace(array($DOC_ROOT, "app/core/config.php"), '', $THIS_FILE);
+$ROOT = str_replace(array($DOC_ROOT, "app/core/config.php"), '', $THIS_FILE);
 defined('SITE_ROOT') ? null : define('SITE_ROOT', $DOC_ROOT . DS . $ROOT);
 define('TOKEN', schoolKey(SCH_DOMAIN));

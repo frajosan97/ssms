@@ -9,8 +9,8 @@ trait Model
 
     use Database;
 
-    protected $offset       = 0;
-    public    $errors       = [];
+    protected $offset = 0;
+    public $errors = [];
 
     public function fetchAll()
     {

@@ -331,7 +331,7 @@ function array_rank($in)
 {
     $x = $in;
     arsort($x);
-    $rank       = 0;
+    $rank = 0;
     $hiddenrank = 0;
     $hold = null;
     foreach ($x as $key => $val) {
@@ -465,14 +465,51 @@ function toWords($num = false)
     $num = (int) $num;
     $words = array();
     $list1 = array(
-        '', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven',
-        'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'
+        '',
+        'one',
+        'two',
+        'three',
+        'four',
+        'five',
+        'six',
+        'seven',
+        'eight',
+        'nine',
+        'ten',
+        'eleven',
+        'twelve',
+        'thirteen',
+        'fourteen',
+        'fifteen',
+        'sixteen',
+        'seventeen',
+        'eighteen',
+        'nineteen'
     );
     $list2 = array('', 'ten', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety', 'hundred');
     $list3 = array(
-        '', 'thousand', 'million', 'billion', 'trillion', 'quadrillion', 'quintillion', 'sextillion', 'septillion',
-        'octillion', 'nonillion', 'decillion', 'undecillion', 'duodecillion', 'tredecillion', 'quattuordecillion',
-        'quindecillion', 'sexdecillion', 'septendecillion', 'octodecillion', 'novemdecillion', 'vigintillion'
+        '',
+        'thousand',
+        'million',
+        'billion',
+        'trillion',
+        'quadrillion',
+        'quintillion',
+        'sextillion',
+        'septillion',
+        'octillion',
+        'nonillion',
+        'decillion',
+        'undecillion',
+        'duodecillion',
+        'tredecillion',
+        'quattuordecillion',
+        'quindecillion',
+        'sexdecillion',
+        'septendecillion',
+        'octodecillion',
+        'novemdecillion',
+        'vigintillion'
     );
     $num_length = strlen($num);
     $levels = (int) (($num_length + 2) / 3);
@@ -488,7 +525,7 @@ function toWords($num = false)
         if ($tens < 20) {
             $tens = ($tens ? ' ' . $list1[$tens] . ' ' : '');
         } else {
-            $tens = (int)($tens / 10);
+            $tens = (int) ($tens / 10);
             $tens = ' ' . $list2[$tens] . ' ';
             $singles = (int) ($num_levels[$i] % 10);
             $singles = ' ' . $list1[$singles] . ' ';

@@ -1,2 +1,2 @@
-# school
-School management system
+# SSMS
+Secondary school management system

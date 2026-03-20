@@ -1,6 +1,7 @@
 <div class="container py-4">
     <div class="card rounded-0 border-0 mb-4">
-        <iframe src="<?= APPINFO->sch_map ?>" class="rounded border-custom" frameborder="0" style="height: 450px"></iframe>
+        <iframe src="<?= APPINFO->sch_map ?>" class="rounded border-custom" frameborder="0"
+            style="height: 450px"></iframe>
     </div>
     <form action="" method="post">
         <div class="card border-0 py-3 shadow">

@@ -253,7 +253,9 @@ class App
                 }
                 // Send mail and sms alert on account creation
                 $smsInfo = [
-                    "phone" => APPINFO->sch_phone, "email" => APPINFO->sch_email, "subject" => strtoupper(APPINFO->sch_name . " system renewal invoice"),
+                    "phone" => APPINFO->sch_phone,
+                    "email" => APPINFO->sch_email,
+                    "subject" => strtoupper(APPINFO->sch_name . " system renewal invoice"),
                     "message" => ucwords(greeting_msg()) . ", " . strtoupper(APPINFO->sch_name) . " system renewal invoice have been created. Kindly login to your staff account to view and pay by " . date("d/m/Y", strtotime($invoiceDate)) . " for the invoice: " . $invoiceKey . ". To pay via M-Pesa use Till Number: " . TILL . ", Amount: Ksh " . number_format($invAmountAddVAT['invGrantTotal'], 2) . ". Thank you."
                 ];
                 $this->apiSMS($smsInfo);
@@ -595,7 +597,7 @@ class App
                             } else {
                                 $ttPaid += $finance->fi_amnt;
                             }
-                            $studentInfo['finance'][] = (object)array_merge(objectToArray($finance), array("rect_bill" => $ttBilled, "rect_paid" => $ttPaid, "rect_bal" => ($ttBilled - $ttPaid)));
+                            $studentInfo['finance'][] = (object) array_merge(objectToArray($finance), array("rect_bill" => $ttBilled, "rect_paid" => $ttPaid, "rect_bal" => ($ttBilled - $ttPaid)));
                         }
                     }
                 }
@@ -1511,7 +1513,10 @@ class App
                 );
             } else {
                 $subjectsAnalysis['subjectsData'][$thisSubInfo->sub_name] = array(
-                    "subMarks" => "-", "subMeanMarks" => "-", "subMeanPoints" => "-", "subGrade" => "-"
+                    "subMarks" => "-",
+                    "subMeanMarks" => "-",
+                    "subMeanPoints" => "-",
+                    "subGrade" => "-"
                 );
             }
         }

@@ -2,8 +2,8 @@
 
 switch (VIEWFOLDER) {
     case 'staff':
-?>
-        <?php if ($_SESSION[VIEWFOLDER]->user_role > 1) : ?>
+        ?>
+        <?php if ($_SESSION[VIEWFOLDER]->user_role > 1): ?>
             <!-- start Staff -->
             <li class="nav-item has-treeview">
                 <a class="cursor-pointer2 nav-link">
@@ -49,7 +49,7 @@ switch (VIEWFOLDER) {
             </ul>
         </li>
         <!-- / end student -->
-        <?php if ($_SESSION[VIEWFOLDER]->user_role > 1) : ?>
+        <?php if ($_SESSION[VIEWFOLDER]->user_role > 1): ?>
             <!-- start classes -->
             <li class="nav-item">
                 <a href="<?= ROOT . VIEWFOLDER ?>/classes" class="cursor-pointer2 nav-link">
@@ -66,7 +66,7 @@ switch (VIEWFOLDER) {
                 <p>exams<i class="fas fa-angle-left right"></i></p>
             </a>
             <ul class="nav nav-treeview treeviewcustom">
-                <?php if ($_SESSION[VIEWFOLDER]->user_role > 1) : ?>
+                <?php if ($_SESSION[VIEWFOLDER]->user_role > 1): ?>
                     <li class="nav-item">
                         <a href="<?= ROOT . VIEWFOLDER ?>/system/exam" class="cursor-pointer2 nav-link">
                             <i class="nav-icon fas fa-arrow-circle-right"></i>
@@ -163,21 +163,19 @@ switch (VIEWFOLDER) {
             </ul>
         </li>
         <!-- / end library -->
-        <?php if ($_SESSION[VIEWFOLDER]->user_role > 1) : ?>
-            <!-- start invoice -->
-            <li class="nav-item">
+        <?php if ($_SESSION[VIEWFOLDER]->user_role > 1): ?>
+            <!-- <li class="nav-item">
                 <a href="<?= ROOT . VIEWFOLDER ?>/Invoice" class="cursor-pointer2 nav-link">
                     <i class="nav-icon fas fa-wallet"></i>
                     <p>Invoices <i class="right fas fa-angle-down"></i></p>
                 </a>
-            </li>
-            <!-- / end invoice -->
+            </li> -->
         <?php endif; ?>
 
-    <?php
+        <?php
         break;
     case "finance":
-    ?>
+        ?>
 
         <li class="nav-item has-treeview">
             <a class="cursor-pointer2 nav-link">
@@ -312,13 +310,13 @@ switch (VIEWFOLDER) {
             </ul>
         </li>
 
-    <?php
+        <?php
         break;
     case "secretary":
 
         break;
     case "admin":
-    ?>
+        ?>
 
         <!-- start school -->
         <li class="nav-item has-treeview">
@@ -371,10 +369,10 @@ switch (VIEWFOLDER) {
         </li>
         <!-- / end billing -->
 
-    <?php
+        <?php
         break;
     default:
-    ?>
+        ?>
 
         <!-- start library -->
         <li class="nav-item has-treeview">
@@ -392,13 +390,13 @@ switch (VIEWFOLDER) {
             </ul>
         </li>
 
-<?php
+        <?php
         break;
 }
 ?>
 
-<?php if (!(VIEWFOLDER == "student")) : ?>
-    <?php if ($_SESSION[VIEWFOLDER]->user_role > 1) : ?>
+<?php if (!(VIEWFOLDER == "student")): ?>
+    <?php if ($_SESSION[VIEWFOLDER]->user_role > 1): ?>
         <!-- start management -->
         <li class="nav-item has-treeview">
             <a class="cursor-pointer2 nav-link">
@@ -409,7 +407,7 @@ switch (VIEWFOLDER) {
                 <?php
                 switch (VIEWFOLDER) {
                     case 'staff':
-                ?>
+                        ?>
                         <li class="nav-item">
                             <a href="<?= ROOT . VIEWFOLDER ?>/system/term" class="cursor-pointer2 nav-link">
                                 <i class="nav-icon fas fa-arrow-circle-right"></i>
@@ -422,10 +420,10 @@ switch (VIEWFOLDER) {
                                 <p>subjects</p>
                             </a>
                         </li>
-                    <?php
+                        <?php
                         break;
                     case 'finance':
-                    ?>
+                        ?>
                         <li class="nav-item">
                             <a href="<?= ROOT . VIEWFOLDER ?>/system/term" class="cursor-pointer2 nav-link">
                                 <i class="nav-icon fas fa-arrow-circle-right"></i>
@@ -444,7 +442,7 @@ switch (VIEWFOLDER) {
                                 <p>fees structure</p>
                             </a>
                         </li>
-                <?php
+                        <?php
                         break;
                     default:
                         break;
