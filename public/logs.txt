@@ -1,1 +1,6 @@
 1774012475|kathekaboys|staff|1644176436|mutunga|logged in successfully
+1774013216|kathekaboys|staff|1644176436|samuel mutunga|Created new staff member with username Admin
+1774013262|kathekaboys|staff|1644176436|samuel mutunga|Updated staff member with username d181b1137ffb1eee6d742ee495d8da1686fa411084f92c8b3ffc764d75b0e558
+1774013281|kathekaboys|staff|1644176436|mutunga|logged out successfully
+1774013350|kathekaboys|staff|1644176436|mutunga|logged in successfully
+1774013428|kathekaboys|staff|1644176436|mutunga|logged out successfully

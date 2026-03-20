@@ -316,60 +316,7 @@ switch (VIEWFOLDER) {
 
         break;
     case "admin":
-        ?>
 
-        <!-- start school -->
-        <li class="nav-item has-treeview">
-            <a class="cursor-pointer2 nav-link">
-                <i class="nav-icon fas fa-university"></i>
-                <p>schools<i class="fas fa-angle-left right"></i></p>
-            </a>
-            <ul class="nav nav-treeview treeviewcustom">
-                <li class="nav-item">
-                    <a href="<?= ROOT . VIEWFOLDER ?>/school" class="cursor-pointer2 nav-link">
-                        <i class="nav-icon fas fa-arrow-circle-right"></i>
-                        <p>all school</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="<?= ROOT . VIEWFOLDER ?>/school/create" class="cursor-pointer2 nav-link">
-                        <i class="nav-icon fas fa-arrow-circle-right"></i>
-                        <p>add school</p>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <!-- / end school -->
-        <!-- start billing -->
-        <li class="nav-item has-treeview">
-            <a class="cursor-pointer2 nav-link">
-                <i class="nav-icon fas fa-wallet"></i>
-                <p>billing & payments<i class="fas fa-angle-left right"></i></p>
-            </a>
-            <ul class="nav nav-treeview treeviewcustom">
-                <li class="nav-item">
-                    <a href="<?= ROOT . VIEWFOLDER ?>/invoice" class="cursor-pointer2 nav-link">
-                        <i class="nav-icon fas fa-arrow-circle-right"></i>
-                        <p>invoices</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="<?= ROOT . VIEWFOLDER ?>/invoice/create" class="cursor-pointer2 nav-link">
-                        <i class="nav-icon fas fa-arrow-circle-right"></i>
-                        <p>create invoice</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="<?= ROOT . VIEWFOLDER ?>/invoice/payment" class="cursor-pointer2 nav-link">
-                        <i class="nav-icon fas fa-arrow-circle-right"></i>
-                        <p>payments</p>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <!-- / end billing -->
-
-        <?php
         break;
     default:
         ?>
